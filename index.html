@@ -1,0 +1,96 @@
+<html lang="ru" class="h-100"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>lrw3.0 🌐</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        .d-flex{
+    background-color: #f2f1f5;
+    color: #1a1e1b;
+}
+
+.btn{
+    background-color: #1a1e1b;
+    color: #f2f1f5;
+}
+
+.ds{
+    font-size: 96px; 
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+    .d-flex{
+        color: azure;
+        background-color: black;
+    }
+    .btn{
+        background-color: azure;
+        color: #1a1e1b;
+    }
+}
+
+@media screen and (max-width:800px){
+    .ds{
+        font-size: 60px;
+    }
+}
+
+
+.anim-typewriter{
+  animation: typewriter 1s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 102%}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    </style>
+  </head>
+  <body class="d-flex h-100 text-center">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start" style="font-family: 'Roboto Mono'; letter-spacing: 0,5px;">lrw3.0🌐</h3>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1 class = 'ds anim-typewriter' id="p1">float Web = 3.0;</h1>
+    <p class="lead">релиз 05.06.2022</p>
+    <p class="lead">
+      <a class="btn btn-lg btn-secondary fw-bold">скоро 🫂</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+      
+  </footer>
+</div>
+</body>
+<script>
+    const screenWidth = window.screen.width;
+    if(screenWidth <= 800){
+        document.getElementById("p1").innerHTML = "Web = 3.0";
+    }
+</script>
+</html>
